@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Phlying Wayl Studios</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- <link href='http://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'> -->
+        <!-- <link href='http://fonts.googleapis.com/css?family=Dosis:200,500,700' rel='stylesheet' type='text/css'>   -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+		</script>
+ 		<script>
+		$(document).ready(function(){
+			var $gallery = $(".gallery");
+			var $photos = $(".photos");
+			
+			$gallery.addClass("clickable");
+			$photos.hide();
+			
+			
+			$gallery.bind("click", function(){
+				$photos.toggle(500);
+			});
+		});
+		</script>
+	</head>
+
+	<body>
+    	<!-- wrapper div for sticky footer -->
+        <div id="wrap">
+            <header>
+                <a href="index.html"><img src="images/waylHeader.png"></a>
+            </header>
+            
+            <!-- main content div -->
+            <div id="mainContent" class="aProjectPage">
+            	<h2 class="light">CURTAINS IN MY MIND</h3>
+                <iframe src="http://player.vimeo.com/video/57201158?byline=0&amp;portrait=0&amp;color=1d8c96" width="800" height="450" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+                <article>
+                	<h3 class="light insideBlock">DIRECTOR<br>WRITER<br>EDITOR</h3>
+                    <div class="project_description">
+                    	<p>Curtains In My Mind is a short film that aims to introduce metaphysical concepts about the nature of reality and the power of ideas and beliefs to a mainstream audience. This project is inspired by both the writing of Gregg Braden, author of The Divine Matrix and The Spontaneous Healing of Belief, as well as Friedrich Kittler's work on the relationship between hardware, software, and users.<br>First place at Simon Fraser University's School of Interactive Arts and Technology Showcase, film category. Screened at the International Festival of Video Art of Casablanca.<br>Currently only the trailer is available for public viewing as the film is in submission to festivals.</p>
+                    </div>
+                </article>
+                <div>
+                	<div class="button gallery">photo gallery</div>
+                		<div class="photos"><img src="images/curtainsOutdoorDirector.png">
+                        <p>This is where photos and descriptions are going to go. For now, here's a photo of me on set.</p>
+                    	</div>
+                </div>
+            </div>
+            <!-- end of main content div -->
+        </div>
+        <!-- end of wrapper div -->
+        
+        <!-- bar background containter div -->
+        <div id="barBackgroundContainer">
+        	<!-- bottom bar div -->
+        	<div id="bottomBar" class="homePage">
+                <nav>
+                    <div class="button"><a href="about.html">about</a></div>
+                    <div class="button currentPage"><a href="projects.html">projects</a></div>
+                    <div class="button"><a href="contact.html">contact</a></div>
+                </nav>
+                <!-- social networking div -->
+                <div id="socialNetworking">
+                	<div class="socialPair">
+                    	<img src="images/twitterIcon.png">
+                    	<p>@phlyingwayl</p>
+                    </div>
+                    <div class="socialPair">
+                    	<img src="images/tumblrIcon.png">
+                    	<p>phlyingwayl.tumblr.com</p>
+                    </div>
+                </div>
+                <!-- end of social media div -->
+                
+                <footer>
+                    <p>&copy; Phlying Wayl Studios - Samantha Derochie 2013 All rights reserved.</p>
+                </footer>
+        	</div>
+        	<!-- end of bottom bar div -->
+        </div>
+        <!-- end of bar background container div -->
+	</body>
+</html>
