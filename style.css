@@ -75,9 +75,10 @@ body {
 	padding-bottom:180px;
 	display:block;
 	max-width:800px;
+	min-width:700px;
 	margin-left:auto;
 	margin-right:auto;
-	padding-top:40px;
+	padding-top:10px;
 }
 
 .aProjectPage {
@@ -90,16 +91,26 @@ body {
 
 .leftSide {
 	float:left;
-	width:50%;
+	width:30%;
 }
 
 .rightSide {
-	float:right;
-	width:50%;
+	float:left;
+	width:30%;
+	padding: 0 30px;
+}
+
+.aboutPage .leftSide, .aboutPage .rightSide {
+	width:45%;
 }
 
 .leftSide p {
 	padding-left: 40px;
+}
+
+.twitter {
+	float:right;
+	text-align:center;
 }
 
 img {
@@ -186,15 +197,16 @@ a .border:hover {
 nav {
 	text-align:center;
 	padding: 15px 0px;
+	min-width:600px;
 }
 
 .button {
 	display:inline-block;
-	background-color:#1d8c96;
+	background-color:#135d66;
 	border-radius: 6px;
 	-moz-border-radius: 6px;
 	-webkit-border-radius: 6px;
-	border: 1px solid #1d8c96;
+	border: 1px solid #135d66;
 	font-size:30px;
 	margin-left:10px;
 	margin-right:10px;
@@ -204,18 +216,24 @@ nav {
 	text-decoration:none;
 }
 
+#bottomBar .button {
+	font-size:20px;
+	width:90px;
+	background-color:#1d8c96;
+}
+
 .button a {
 	text-decoration:none;
 	color:#FFF;
 }
 
-.button:hover, .currentPage {
+.button:hover, #bottomBar .button:hover, .currentPage, #bottomBar .currentPage {
 	background-color:#1e3e85;
 	border: 1px solid #1e3e85;
 }
 
 .gallery {
-	width:220px;
+	width:320px;
 	background-color:#135d66;
 	text-align:center;
 	padding: 20px 0;
@@ -223,6 +241,10 @@ nav {
 
 .photos {
 	padding: 20px 0;
+}
+
+.photos img {
+	width:800px;
 }
 
 #socialNetworking {
