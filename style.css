@@ -274,3 +274,9 @@ footer {
 	text-align:center;
 	font-size:12px;
 }
+
+@media (max-width: 640px) {
+	html {
+		font-size:150%;
+	}
+}
